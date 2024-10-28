@@ -764,7 +764,7 @@ main {
  */
 
 .timeline {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .timeline .title-wrapper {
@@ -833,6 +833,74 @@ main {
 
 .skills-title {
   margin-bottom: 20px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-set {
+  color: white;
+  animation: float 2s linear infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skill-set p {
+  text-align: center;
+}
+.skill-set:nth-child(even) {
+  animation: evenfloat 2s linear infinite;
+}
+
+@media (max-width: 700px) {
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(3%);
+  }
+  60% {
+    transform: translateY(6%);
+  }
+  90% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes evenfloat {
+  0% {
+    transform: translateY(6%);
+  }
+
+  30% {
+    transform: translateY(3%);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(6%);
+  }
 }
 
 /*-----------------------------------*\
