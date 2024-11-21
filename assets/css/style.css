@@ -914,10 +914,12 @@ main {
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
+  display: none;
 }
 
 .filter-select {
   background: var(--eerie-black-2);
+  display: none;
   color: var(--light-gray);
   display: flex;
   justify-content: space-between;
@@ -945,17 +947,20 @@ main {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
+  /* display: none; */
   pointer-events: none;
   transition: 0.15s ease-in-out;
 }
 
 .filter-select.active + .select-list {
   opacity: 1;
-  visibility: visible;
+  /* visibility: visible; */
+  display: none;
   pointer-events: all;
 }
 
 .select-item button {
+  display: none;
   background: var(--eerie-black-2);
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1075,6 +1080,7 @@ main {
 }
 
 .project-category {
+  /* display: none; */
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1519,14 +1525,6 @@ textarea.form-input::-webkit-resizer {
     border-radius: 16px;
   }
 
-  .blog-posts-list {
-    gap: 30px;
-  }
-
-  .blog-content {
-    padding: 25px;
-  }
-
   /**
    * #CONTACT
    */
@@ -1627,6 +1625,7 @@ textarea.form-input::-webkit-resizer {
     align-items: center;
     gap: 25px;
     padding-left: 5px;
+    display: none;
     margin-bottom: 30px;
   }
 
