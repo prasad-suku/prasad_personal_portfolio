@@ -1846,7 +1846,7 @@ textarea.form-input::-webkit-resizer {
     top: 60px;
     max-height: max-content;
     height: 100%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-top: 60px;
     z-index: 1;
   }
